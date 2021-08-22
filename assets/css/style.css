@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+@media screen and (min-width: 981px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 980px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 7px;
+  }
+}
+body {
+  background: linear-gradient(to bottom, #ffffff, #dddddd);
+  font-family: arial, sans-serif;
+}
+.demo {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.demo__button {
+  width: 200px;
+  display: block;
+  margin: 20px auto 0;
+  background-color: #eee;
+  transition: background-color 0.4s ease-out;
+  border: 1px solid #a29e97;
+  cursor: pointer;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: #000;
+}
+.demo__button:hover,
+.demo__button:focus {
+  background-color: #a29e97;
+  color: #ffffff;
+}
+.melnik909 {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  color: #000;
+  text-decoration: none;
+}
+.melnik909:hover,
+.melnik909:focus {
+  text-decoration: underline;
+}
+/*
+ * CSS Payment Card
+ */
+.payment-card {
+  width: 60rem;
+  box-sizing: border-box;
+  padding: 2% 2% 4%;
+}
+.bank-card {
+  position: relative;
+  height: 30rem;
+  font-family: arial, sans-serif;
+}
+.bank-card__side {
+  width: 65%;
+  position: absolute;
+  border-radius: 10px;
+  border-width: 0.16666667rem;
+  border-style: solid;
+}
+.bank-card__front {
+  background-color: #f0f0ee;
+  padding: 5%;
+  box-shadow: 0 0 10px #f4f4f2;
+  border-color: #a29e97;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.bank-card__back {
+  background-color: #e0ddd7;
+  padding: 24.5% 5% 11%;
+  box-shadow: 0 0 2rem #f3f3f3;
+  text-align: right;
+  border-color: #dad9d6;
+  top: 12%;
+  right: 0;
+}
+.bank-card__back:before {
+  content: "";
+  width: 100%;
+  height: 25%;
+  background-color: #8e8b85;
+  position: absolute;
+  top: 14%;
+  right: 0;
+}
+.bank-card__icon {
+  display: block;
+  width: 12%;
+  height: 12%;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 15%;
+}
+.bank-card__icon_mastercard {
+  background-image: url("https://stas-melnikov.ru/paymentcard/mastercard.svg");
+  right: 15%;
+}
+.bank-card__icon_visa {
+  background-image: url("https://stas-melnikov.ru/paymentcard/visa.svg");
+  right: 5%;
+}
+.bank-card__inner {
+  margin-bottom: 4%;
+}
+.bank-card__inner:last-child {
+  margin-bottom: 0;
+}
+.bank-card__label {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25%;
+}
+.bank-card__label_fullwidth {
+  width: 100%;
+}
+.bank-card__hint {
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+  position: absolute;
+}
+.bank-card__caption {
+  text-transform: uppercase;
+  font-size: 1.09090909rem;
+  margin-left: 1%;
+}
+.bank-card__field {
+  box-sizing: border-box;
+  border: 0.33333333rem solid #d0d0ce;
+  outline: none;
+  width: 100%;
+  padding: .7em;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+.bank-card__field:focus {
+  border-color: #fdde60;
+}
+@media screen and (max-width: 640px) {
+  .bank-card__field {
+    font-size: 1.2rem;
+  }
+}
+.bank-card__separator {
+  font-size: 3.33333333rem;
+  color: #c4c4c3;
+  padding-left: 4%;
+  padding-right: 4%;
+  display: inline-block;
+  vertical-align: middle;
+}
